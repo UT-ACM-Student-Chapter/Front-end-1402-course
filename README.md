@@ -2,11 +2,11 @@
 All materials will be uploaded here.
 
 ## Emails:
-Teacher: Parna80as@gmail.com
-Mentors:
-ahmdlomrym@gmail.com
-analeemoshtagh@gmail.com
-itsrozasworld@gmail.com
-mortezabahjat@gmail.com
-sima80esmaili@gmail.com
-therealamirmahdi79@gmail.com
+* Teacher: Parna80as@gmail.com
+* Mentors:
+- ahmdlomrym@gmail.com
+- analeemoshtagh@gmail.com
+- itsrozasworld@gmail.com
+- mortezabahjat@gmail.com
+- sima80esmaili@gmail.com
+- therealamirmahdi79@gmail.com
