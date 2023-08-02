@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="icon" href="./favicon.png" />
+    <!-- add extra meta data -->
+  </head>
+  <body>
+    <header class="mainHeader">
+      <nav>
+        <!-- add correct class name or id to some elements -->
+        <ul class="list mainHeader__items">
+          <!-- image or svg for icon -->
+          <li>|||</li>
+          <li><h1>Standard</h1></li>
+          <li><a href="#">$</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="first-page">
+      <section>
+        <div>
+          <label for="output">Output:</label>
+          <input name="output" type="number" disabled value="70" />
+          <input type="button" value="del" />
+        </div>
+        <div>
+          <form action="#" method="post">
+            <div>
+              <input type="button" value="9" id="9" />
+              <input type="button" value="8" />
+              <input type="button" value="7" />
+              <input type="button" value="6" />
+              <input type="button" value="5" />
+              <input type="button" value="4" />
+              <input type="button" value="3" />
+              <input type="button" value="2" />
+              <input type="button" value="1" />
+              <input type="button" value="+/-" />
+              <input type="button" value="0" />
+              <input type="button" value="." />
+            </div>
+            <div>
+              <input type="button" value="+" id="add" />
+              <input type="button" value="-" />
+              <input type="button" value="*" />
+              <input type="button" value="/" />
+              <button type="submit">=</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <aside>
+        <ul>
+          <li><p>History</p></li>
+          <li><p>Memory</p></li>
+        </ul>
+        <div>
+          <div>
+            <ol>
+              <li>5 + 7 = 12
+              </li>
+            </ol>
+          </div>
+          <div>
+            <ol>
+              <li>a = 2</li>
+            </ol>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; ACM - 2023</p>
+    </footer>
+  </body>
+</html>

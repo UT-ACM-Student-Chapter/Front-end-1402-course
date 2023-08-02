@@ -1,12 +1,17 @@
-# Front-end-1402-course
-All materials will be uploaded here.
+# Front-end course
+- Date: Summer 2023
+- ACM
 
-## Emails:
-* Teacher: Parna80as@gmail.com
-* Mentors:
-- ahmdlomrym@gmail.com
-- analeemoshtagh@gmail.com
-- itsrozasworld@gmail.com
-- mortezabahjat@gmail.com
-- sima80esmaili@gmail.com
-- therealamirmahdi79@gmail.com
+All materials and lessons is uploaded here.
+
+<hr/>
+
+### Supervisor
+- Parna Asadi - [github](https://github.com/Perriex)
+
+### Mentors:
+- [Maryam Ahmadlou](mailto:ahmdlomrym@gmail.com)
+- [Analee Moshtagh](mailto:analeemoshtagh@gmail.com)
+- [Razieh Dorehgard](mailto:itsrozasworld@gmail.com)
+- [Morteza Bahjat](mailto:mortezabahjat@gmail.com)
+- [Sima Esmaeili](mailto:sima80esmaili@gmail.com)
