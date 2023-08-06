@@ -21,4 +21,4 @@
 
 Developing some FUN!
 
-- [HW1](../../Homeworks/HW1.pdf)
+- [HW1](../../Homework/HW1.pdf)
