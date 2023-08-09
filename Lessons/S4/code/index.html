@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator - with UI</title>
+    <link rel="icon" href="./assets/image/favicon.png" />
+    <link rel="stylesheet" href="./assets/stylesheets/fonts.css" />
+
+    <link rel="stylesheet" href="./assets/css/index.min.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav>
+        <ul class="main-header__list">
+          <li><span id="menu"></span></li>
+          <li><h1 class="title">Standard</h1></li>
+        </ul>
+      </nav>
+      <a href="#" id="open-dialog">$</a>
+    </header>
+    <main class="main-page">
+      <section>
+        <div class="output-container">
+          <span class="output-container__label"
+            ><label for="output">Output:</label></span
+          >
+          <input
+            name="output"
+            type="number"
+            disabled
+            value="70"
+            placeholder="output"
+          />
+          <input type="button" value="del" />
+        </div>
+        <div class="numpad-container">
+          <form action="#" method="post">
+            <div id="numpad" class="">
+              <input type="button" value="9" id="9" />
+              <input type="button" value="8" />
+              <input type="button" value="7" />
+              <input type="button" value="6" />
+              <input type="button" value="5" />
+              <input type="button" value="4" />
+              <input type="button" value="3" />
+              <input type="button" value="2" />
+              <input type="button" value="1" />
+              <input type="button" value="+/-" />
+              <input type="button" value="0" />
+              <input type="button" value="." />
+            </div>
+            <div id="functions" class="">
+              <input type="button" value="+" id="add" />
+              <input type="button" value="-" id="sub" />
+              <input type="button" value="*" id="mult" />
+              <input type="button" value="/" id="divid" />
+              <button type="submit" id="calculator">=</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <aside class="aside-bar">
+        <ul class="aside-bar__tablist">
+          <li><p>History</p></li>
+          <li><p>Memory</p></li>
+        </ul>
+        <div class="aside-bar__tab-items">
+          <div id="history">
+            <ol>
+              <li><p>5 + 7 = 12</p></li>
+            </ol>
+          </div>
+          <div id="memory">
+            <ol>
+              <li><p>a = 2</p></li>
+            </ol>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer class="main-footer">
+      <p>&copy; ACM - 2023</p>
+    </footer>
+  </body>
+</html>

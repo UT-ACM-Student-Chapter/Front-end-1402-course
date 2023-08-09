@@ -1,0 +1,96 @@
+// :root {
+//   --background-color-default: #f1f1f1;
+// }
+@import "./variables";
+
+@function set-font-size($key: "medium") {
+  @return map-get($font-size, $key);
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-align($justify: none) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
+@mixin media-mobile {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin media-notpad {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $background-color-default;
+  padding: 1rem;
+  font-size: 12rem;
+}
+
+input[type="button"],
+button {
+  $size: 5rem;
+  width: $size;
+  height: $size;
+  font-size: set-font-size();
+  @include media-mobile {
+    $size: 2rem;
+    width: $size;
+    height: $size;
+  }
+}
+
+h1 {
+  font-size: set-font-size("large");
+}
+
+p,
+label {
+  font-size: map-get($font-size, "medium");
+}
+
+.main-page {
+  padding: 5rem;
+  @include flex-align(space-around);
+  .numpad-container {
+    #numpad {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    #functions input {
+      width: 100px - 50px;
+    }
+  }
+}
+
+.output-container {
+  @include flex-center;
+  #{&}__label {
+    color: green;
+  }
+}
+
+.main-header {
+  @include flex-center;
+  flex-direction: row;
+  #{&}__list {
+    @extend .main-header;
+    list-style: none;
+  }
+}

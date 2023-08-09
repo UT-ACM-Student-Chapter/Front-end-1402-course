@@ -1,0 +1,46 @@
+body {
+  background-color: #f2f2f2;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  /* font-size: 16px; */
+  /* 10 = 16 * 0.625*/
+}
+
+p,
+label,
+input,
+button,
+li {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+input[type=button] {
+  width: 10rem;
+  height: 10rem;
+}
+
+.numpad-container {
+  margin: 1rem;
+  width: 14px;
+}
+.numpad-container #numpad:first-child {
+  background-color: red;
+}
+
+.output-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.output-container .output-container__label {
+  font-size: large;
+}/*# sourceMappingURL=index.min.css.map */
