@@ -1,0 +1,32 @@
+@import "./mixin";
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  padding: $main-padding-size;
+
+  box-shadow: 2px 2px 1px 1px $shadow-color; /* ??? */
+  nav {
+    @include flex-justify(flex-start);
+    .logo {
+      width: 3rem;
+      height: auto;
+
+      cursor: pointer;
+    }
+    .brand {
+      margin-left: $main-margin-size;
+
+      color: $link-color;
+      text-decoration: none;
+      font-size: map-get($font-size, "large");
+      &:hover {
+        color: #118452;
+      }
+    }
+  }
+}

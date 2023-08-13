@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  padding: 1rem;
+  box-shadow: 2px 2px 1px 1px #e0f5ff; /* ??? */
+}
+.main-header nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main-header nav .logo {
+  width: 3rem;
+  height: auto;
+  cursor: pointer;
+}
+.main-header nav .brand {
+  margin-left: 1rem;
+  color: #28dc9a;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.main-header nav .brand:hover {
+  color: #118452;
+}/*# sourceMappingURL=header.min.css.map */

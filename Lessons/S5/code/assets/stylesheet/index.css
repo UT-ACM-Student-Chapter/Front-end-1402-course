@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Random";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+html,
+* {
+  font-family: "Random", sans-serif;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+p,
+label,
+button,
+input,
+li,
+a {
+  font-size: 1.6rem;
+}
+
+span {
+  font-size: 1.8rem;
+}
+
+section {
+  min-height: 85vh;
+}
+
+/* temporary added - session 6' */
+.recent-activities {
+  display: none;
+}

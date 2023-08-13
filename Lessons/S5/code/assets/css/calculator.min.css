@@ -1,0 +1,127 @@
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+main .main-calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: clamp(20em, 100%, 200em);
+  /*
+  width: 100%
+  max-width: 200em
+  min-width: 20em
+  */
+  background-color: #93e5fa;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 4px 5px 1px 2px #e0f5ff;
+}
+main .main-calculator__output-area {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-color: #93e5fa;
+  padding: 1.5rem;
+}
+main .main-calculator__output-area .previous-operand {
+  color: #2c2c2c;
+  font-size: 1rem;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+main .main-calculator__output-area .current-output {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+main .main-calculator__output-area .current-output .calculator-result, main .main-calculator__output-area .current-output #delete-button {
+  border-radius: 5px;
+  padding: 0.2rem;
+  border: 0.2rem solid #9dd6e2;
+  text-align: center;
+  height: 3.8rem;
+}
+main .main-calculator__output-area .current-output .calculator-result::-moz-placeholder, main .main-calculator__output-area .current-output #delete-button::-moz-placeholder {
+  color: #f16e7c;
+  opacity: 0.5;
+}
+main .main-calculator__output-area .current-output .calculator-result::placeholder, main .main-calculator__output-area .current-output #delete-button::placeholder {
+  color: #f16e7c;
+  opacity: 0.5;
+}
+main .main-calculator__output-area .current-output #delete-button {
+  background-color: #f16e7c;
+  width: 5rem;
+  height: 4.6rem;
+  color: #e6e6e6;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+main .main-calculator__output-area .current-output #delete-button:hover {
+  background-color: #ef5767;
+}
+main .main-calculator__numpad-area {
+  padding: 1rem;
+}
+main .main-calculator__numpad-area form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+main .main-calculator__numpad-area .numpad-dialer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+main .main-calculator__numpad-area .numpad-dialer > input {
+  background-color: #d7ebf4;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 0 0 #e0f5ff;
+  cursor: pointer;
+}
+main .main-calculator__numpad-area .numpad-dialer > input:hover {
+  background-color: #28dc9a;
+}
+main .main-calculator__numpad-area .numpad-dialer #operate {
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 0 0 #e0f5ff;
+  cursor: pointer;
+  background-color: #7efc5f;
+}
+main .main-calculator__numpad-area .numpad-dialer #operate:hover {
+  background-color: #28dc9a;
+}
+main .main-calculator__numpad-area .function-dialer {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+}
+main .main-calculator__numpad-area .function-dialer > input {
+  background-color: #c2d9e3;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 0 0 #e0f5ff;
+  cursor: pointer;
+}
+main .main-calculator__numpad-area .function-dialer > input:hover {
+  background-color: #28dc9a;
+}/*# sourceMappingURL=calculator.min.css.map */

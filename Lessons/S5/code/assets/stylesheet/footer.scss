@@ -1,0 +1,13 @@
+@import "./variables";
+
+footer {
+  height: max-content;
+  background-color: $background-color;
+  text-align: right;
+
+  p {
+    margin-right: 0.2em;
+    color: $secondary-text-color;
+    font-size: map-get($font-size, "small");
+  }
+}

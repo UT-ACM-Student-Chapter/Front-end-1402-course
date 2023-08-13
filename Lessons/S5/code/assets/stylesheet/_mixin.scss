@@ -1,0 +1,26 @@
+@mixin flex-justify($justify: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
+@mixin block-text-align($align) {
+  display: block;
+  width: 100%;
+  text-align: $align;
+}
+
+@mixin numpad-button {
+  width: 5rem;
+  height: 5rem;
+
+  border: none;
+  border-radius: map-get($border-radius, "medium");
+  box-shadow: 0 3px 0 0 $shadow-color;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $link-color;
+  }
+}

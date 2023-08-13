@@ -1,0 +1,129 @@
+@import "./mixin";
+@import "./variables";
+@import "./functions";
+
+main {
+  section {
+    @include flex-justify;
+    padding: $main-padding-size;
+  }
+
+  .main-calculator {
+    @include flex-justify;
+    flex-direction: column;
+
+    width: clamp(20em, 100%, 200em);
+    // instrad of
+    /*
+    width: 100%
+    max-width: 200em
+    min-width: 20em
+    */
+    background-color: $background-color;
+    border-radius: map-get($border-radius, "medium");
+
+    overflow: hidden;
+
+    box-shadow: 4px 5px 1px 2px $shadow-color;
+
+    &__output-area {
+      position: relative;
+
+      display: grid;
+      place-items: center;
+
+      background-color: $background-color;
+
+      padding: $main-padding-size * 1.5;
+
+      .previous-operand {
+        color: $secondary-text-color;
+        font-size: map-get($font-size, "small");
+        position: absolute;
+        top: 25%;
+        left: 30%;
+
+        @include block-text-align(left);
+      }
+
+      .current-output {
+        @include flex-justify(space-between);
+        width: 100%;
+
+        .calculator-result {
+          border-radius: map-get($border-radius, "small");
+          padding: calc($main-padding-size / 5);
+          border: 0.2rem solid $visibale-border-color;
+          text-align: center;
+          height: 3.8rem;
+        }
+
+        .calculator-result::placeholder {
+          color: $danger-color;
+          opacity: 0.5;
+        }
+
+        #delete-button {
+          @extend .calculator-result;
+          // instrad of
+          // border-radius: map-get($border-radius, "small");
+          // padding: calc($main-padding-size / 5);
+          // border: 0.2rem solid $visibale-border-color;
+          // text-align: center;
+
+          // height: 3.8rem;
+
+          background-color: $danger-color;
+          width: 5rem;
+          height: 4.6rem;
+          color: $primary-text-color;
+          text-transform: uppercase;
+          cursor: pointer;
+
+          &:hover {
+            background-color: darken($danger-color, 5%);
+            // darken the color by 5% (css value)
+          }
+        }
+      }
+    }
+
+    &__numpad-area {
+      padding: $main-padding-size;
+
+      form {
+        @include flex-justify;
+        flex-direction: row;
+        gap: 1rem;
+      }
+      .numpad-dialer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // instrad of
+        // 1fr 1fr 1fr
+        gap: 1rem;
+
+        & > input {
+          background-color: numpad-background-color($is-num: true);
+          @include numpad-button;
+        }
+
+        #operate {
+          @include numpad-button;
+          background-color: $special-color;
+        }
+      }
+
+      .function-dialer {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1rem;
+
+        & > input {
+          background-color: numpad-background-color($is-num: false);
+          @include numpad-button;
+        }
+      }
+    }
+  }
+}

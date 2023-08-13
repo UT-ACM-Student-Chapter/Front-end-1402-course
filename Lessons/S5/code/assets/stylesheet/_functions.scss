@@ -1,0 +1,7 @@
+@function numpad-background-color($is-num: true) {
+  @if $is-num {
+    @return $input-color;
+  } @else {
+    @return $output-color;
+  }
+}

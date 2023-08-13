@@ -1,0 +1,11 @@
+footer {
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #93e5fa;
+  text-align: right;
+}
+footer p {
+  margin-right: 0.2em;
+  color: #2c2c2c;
+  font-size: 1rem;
+}/*# sourceMappingURL=footer.min.css.map */
