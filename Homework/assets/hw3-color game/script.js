@@ -2,7 +2,7 @@ var colors = [];
 var pickedColor;
 
 // todo
-// select squeres in html
+// select squeres in html -> find the right query
 var squares = document.querySelectorAll("?");
 // -end
 var colorDisplay = document.querySelector("#color-display");
@@ -10,7 +10,7 @@ var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 
 // todo
-// select reset button
+// select reset button - use Get by ID
 var resetButton = null;
 // -end
 
@@ -18,7 +18,7 @@ var resetButton = null;
 // how to start this game? :)
 // here :::::::::
 // hint: just a funtion call to begin the game
-// another hint ↓
+// another hint ↓ call init
 // -end
 
 function init() {
@@ -29,7 +29,7 @@ function init() {
 
 resetButton.addEventListener("click", function () {
   // todo
-  // call reset :)
+  // call reset function here:)
   // -end
 });
 
@@ -43,7 +43,7 @@ function setupSquares() {
       /*
 		messageDisplay inner text = "you goddamn right!"
 		resetButton innet text =  "Play Again"
-		call another round :D
+		call another round :D -> changeColors
    		*/
 
       //  else
@@ -82,7 +82,7 @@ function changeColors(color) {
 
 function chooseColor() {
   // todo
-  //  choose a random number between 0 to 5
+  //  choose a random number between 0 to 5 -> Math. (ceil, random)
   var random = 0;
   // -end
   return colors[random];
@@ -92,15 +92,15 @@ function genRandomColors() {
   var arr = [];
   // todo
   //  return an array of six(6) random colors
-  // hint: makeColor returns a random color
+  // hint: makeColor returns a random color, use array and push a element in a "for" loop
   // -end
   return arr;
 }
 
 function makeColor() {
+  var r = Math.floor(Math.random() * 256); // what does it do? - hint for the next todo
   // todo
   // select random numbers for r, g, b
-  var r = 0;
   var g = 0;
   var b = 0;
   // -end
