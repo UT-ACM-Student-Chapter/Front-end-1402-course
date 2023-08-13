@@ -82,7 +82,8 @@ function changeColors(color) {
 
 function chooseColor() {
   // todo
-  //  choose a random number between 0 to 5 -> Math. (ceil, random)
+  //  choose a random number between 0 to 5 -> Math. (ceil, random) : javascript funtions 
+  // https://www.geeksforgeeks.org/javascript-math-random-method/#:~:text=The%20Javascript%20Math.,%2C%20and%201%20(exclusive).
   var random = 0;
   // -end
   return colors[random];
