@@ -1,8 +1,8 @@
-# HTML: How to improve SEO?
+# CSS
 
 - Teacher: Razieh Dorehgard
 
-## Watching this video can help you more undrestand the concepts in CSS!
+## Watching these videos can help you undrestand new concepts in CSS!
 
 
 * [How to connect CSS file to HTML?](https://drive.google.com/file/d/1dlpBeO-zEFprvPU-Ty1I-QUs1s2B9PPV/view?usp=drive_link)
