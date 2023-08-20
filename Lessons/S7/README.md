@@ -1,13 +1,13 @@
 # Front-end course
 
-- Date: 2023/08/16
-- Main concepts of JavaScript - part one
+- Date: 2023/08/20
+- Main concepts of JavaScript - part two
 
 <hr/>
 
 #### Watch this lesson online!
 
-[click here!](https://drive.google.com/file/d/1AbH2iZ3hI2Fuegl_6sv84bcTWwvx2VB8/view?usp=sharing)
+[click here!](https://drive.google.com/file/d/1ylx6iRoCGpdqWxD_zQg___pkdjLYXi7M/view?usp=sharing)
 
 
 ### Supervisor
