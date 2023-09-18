@@ -6,6 +6,13 @@ All materials and lessons is uploaded here.
 
 <hr/>
 
+## Front-end roadmap
+
+[watch the video](https://drive.google.com/file/d/1llFNg4v0A6dH246ejM4GisDhhylbzGOq/view?usp=drive_link)
+
+[roadmap](https://roadmap.sh/frontend)
+
+
 ### Supervisor
 - Parna Asadi - [github](https://github.com/Perriex)
 
